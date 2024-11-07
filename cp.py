@@ -16,7 +16,7 @@ def save_active_proxy(proxy, latency):
     if not proxy.startswith("http://") and not proxy.startswith("https://"):
         proxy = "http://" + proxy  # Menambahkan 'http://' jika belum ada
     with open("local_proxies.txt", "a") as file:
-        file.write(f"{proxy} - Latency: {latency:.2f} seconds\n")
+        file.write(f"{proxy} \n")
 
 def check_proxy(proxy):
     url = "http://httpbin.org/ip"  # Situs uji untuk melihat alamat IP
