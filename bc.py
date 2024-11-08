@@ -7,8 +7,8 @@ from datetime import datetime, timedelta
 pyautogui.FAILSAFE = False
 
 # Koordinat untuk klik
-coordinates_1 = (770, 300)  # Koordinat pertama
-coordinates_2 = (850, 400)  # Koordinat kedua
+coordinates_1 = (173, 290)  # Koordinat pertama
+coordinates_2 = (179, 284)  # Koordinat kedua
 
 # Durasi program berjalan (24 jam)
 end_time = datetime.now() + timedelta(hours=24)
@@ -23,7 +23,7 @@ while datetime.now() < end_time:
     # Melakukan double-click di koordinat kedua
     pyautogui.moveTo(coordinates_2[0], coordinates_2[1], duration=0.5)
     pyautogui.doubleClick()
-    time.sleep(5)  # Tunggu 5 detik sebelum mengulangi proses
+    time.sleep(15)  # Tunggu 5 detik sebelum mengulangi proses
 
 print("24 jam telah selesai. Program berakhir.")
 sys.exit()
